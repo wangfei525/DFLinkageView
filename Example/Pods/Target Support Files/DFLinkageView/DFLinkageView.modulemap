@@ -1,0 +1,6 @@
+framework module DFLinkageView {
+  umbrella header "DFLinkageView-umbrella.h"
+
+  export *
+  module * { export * }
+}

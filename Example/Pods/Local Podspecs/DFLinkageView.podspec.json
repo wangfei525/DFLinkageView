@@ -1,0 +1,22 @@
+{
+  "name": "DFLinkageView",
+  "version": "0.1.0",
+  "summary": "A short description of DFLinkageView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/wangfeifei0525@163.com/DFLinkageView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wangfeifei0525@163.com": "wangfeifei0525@163.com"
+  },
+  "source": {
+    "git": "https://github.com/wangfeifei0525@163.com/DFLinkageView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DFLinkageView/Classes/**/*"
+}
