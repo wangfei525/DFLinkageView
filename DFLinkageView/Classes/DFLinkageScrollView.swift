@@ -100,7 +100,6 @@ public class DFLinkageScrollView: UIScrollView, UIGestureRecognizerDelegate {
         self.alwaysBounceVertical = true
         plateHeader.headerDelegate = self
         self.addSubview(plateHeader)
-//        self.plateContentView.frame = CGRect(x: 0, y: _headerHeight() + 51, width: 414, height: 700)
         self.insertSubview(plateContentView, belowSubview: (plateHeader))
     }
     
@@ -121,12 +120,7 @@ public class DFLinkageScrollView: UIScrollView, UIGestureRecognizerDelegate {
     }
     
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        if contentOffset.y > _headerHeight() {
-                    return false
-                } else {
-                    print("debug___传递")
-                    return true
-                }
+        return true
     }
     
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -139,7 +133,6 @@ public class DFLinkageScrollView: UIScrollView, UIGestureRecognizerDelegate {
         }
     }
 
-    
     func contentViewDidScroller(view: UIScrollView) {
         //标签常悬
         let y = view.contentOffset.y
@@ -157,7 +150,6 @@ public class DFLinkageScrollView: UIScrollView, UIGestureRecognizerDelegate {
         } else if view.contentOffset.y <= 0 {
             canPlateScroll = false
         }
-        
     }
     
     func plateContentViewDidScroll(view: UIScrollView) {
@@ -188,7 +180,6 @@ extension DFLinkageScrollView: DFLinkageTagHeaderDelegate, UICollectionViewDeleg
     
     public func headerButtonClick(index: Int) {
         plateContentView.scrollToItem(at: IndexPath(item: index, section: 0), at: .left, animated: false)
-        
         if contentOffset.y > _headerHeight() {
             contentOffset = CGPoint(x: 0, y: _headerHeight())
         }
