@@ -1,19 +1,19 @@
 # DFLinkageView
 
-##简介
+## 简介
 DFLinkageView是UIScrollVIew的子类，内部包含一个头部（美女图片处），一个切换选项栏，一个用来切换视图的CollectionView，每个CollectionView的cell对应一个自定义的ViewController。DFLinkageView内部实现切换以及两个scrollView的滚动逻辑，外部使用起来非常方便。
 
-##实现效果
+## 实现效果
 ![image]( https://img-blog.csdnimg.cn/20200802114744384.gif)
 
-##使用方法
-####1.初始化控件
+## 使用方法
+#### 1.初始化控件
 
-####2.设置headerView (需要设置frame！！)
+#### 2.设置headerView (需要设置frame！！)
 
-####3.设置plateTitleArr (悬停部分显示内容)
+#### 3.设置plateTitleArr (悬停部分显示内容)
 
-####4.设置plateControllers (底部collectionView的cell显示内容)需要创建对应的Controller
+#### 4.设置plateControllers (底部collectionView的cell显示内容)需要创建对应的Controller
 
 ```
 func setupView() {
@@ -43,7 +43,7 @@ func setupView() {
 
 ```
 
-####5.DemoPageViewController中设置linkageView  --DFLinkageScrollView中设置代理用
+#### 5.DemoPageViewController中设置linkageView  --DFLinkageScrollView中设置代理用
 linkageView为UIViewController的分类属性
 
 ```
@@ -69,13 +69,13 @@ func setupView() {
 ```
 然后command + R ，就好使了！
 
-##图层结构
+## 图层结构
 
 ![image]( https://img-blog.csdnimg.cn/20200802115718686.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE2ODQ0MDAx,size_16,color_FFFFFF,t_70)
 
-##核心原理
+## 核心原理
 
-####1..让外层scrollView和内层scrollview同时滚动scroll
+#### 1..让外层scrollView和内层scrollview同时滚动scroll
 DFLinkageScrollView实现UIGestureRecognizerDelegate中gestureRecognizer shouldRecognizeSimultaneouslyWith方法
 
 ```
@@ -87,7 +87,7 @@ public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRe
 ```
 让两个手势都起作用
 
-####2.两个scrollview滚动的时候改变他们的contentoffset
+#### 2.两个scrollview滚动的时候改变他们的contentoffset
 
 ```
 public func scrollViewDidScroll(_ scrollView: UIScrollView) {
