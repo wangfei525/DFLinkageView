@@ -112,6 +112,7 @@ public class DFLinkageScrollView: UIScrollView, UIGestureRecognizerDelegate {
     }
     
     private func _initCell() {
+        plateCells.removeAll()
         for controller in plateControllers! {
             let cell = plateContentView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(UICollectionViewCell.self), for: IndexPath(item: 0, section: 0))
             cell.contentView.addSubview((controller as! UIViewController).view)

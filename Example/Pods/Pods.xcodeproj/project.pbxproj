@@ -51,12 +51,11 @@
 		4CBB32046E3B8844FFA021ACFC57702F /* ExpectationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C9A6E4A6FE632DF4362656D8AC7C77 /* ExpectationMessage.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		4DC75A8EC769F6BC6AEBA42DD10D2117 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E906E59597539202C0610CB360AA2AC /* XCTest.framework */; };
 		4E5EE3187B48F60A0FBA4EB9ACB7FD76 /* NSString+C99ExtendedIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CB4B01217924774D42936672B9B207 /* NSString+C99ExtendedIdentifier.swift */; };
-		5208C9F324D5787100ED8C47 /* ReplaceMe.swift in Headers */ = {isa = PBXBuildFile; fileRef = 34AD93D832F4EEF40FD5E76BC6593FAE /* ReplaceMe.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		5208C9F724D5797600ED8C47 /* UIViewController+DFLinkage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5208C9F424D5797600ED8C47 /* UIViewController+DFLinkage.swift */; };
+		5208C9F724D5797600ED8C47 /* DFLinkage+Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5208C9F424D5797600ED8C47 /* DFLinkage+Controller.swift */; };
 		5208C9F824D5797600ED8C47 /* DFLinkageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5208C9F524D5797600ED8C47 /* DFLinkageScrollView.swift */; };
 		5208C9F924D5797600ED8C47 /* DFLinkageTagHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5208C9F624D5797600ED8C47 /* DFLinkageTagHeader.swift */; };
 		5208C9FA24D57D5A00ED8C47 /* DFLinkageScrollView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 5208C9F524D5797600ED8C47 /* DFLinkageScrollView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		5208CA0024D5820800ED8C47 /* UIViewController+DFLinkage.swift in Headers */ = {isa = PBXBuildFile; fileRef = 5208C9F424D5797600ED8C47 /* UIViewController+DFLinkage.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		5208CA0024D5820800ED8C47 /* DFLinkage+Controller.swift in Headers */ = {isa = PBXBuildFile; fileRef = 5208C9F424D5797600ED8C47 /* DFLinkage+Controller.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		5221433E6847800B0533CAADF9BABA04 /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF3E2A721FF8B7C927BFA4532A48FF /* BeCloseTo.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		53B30596B1EA5F0845A886843FB9E859 /* CwlCatchException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290AB06C5020C7D0666881F33126A597 /* CwlCatchException.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		543967CB633CDE86DFD53581EAE1A35D /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBABF0035215344AC709939D44494FE /* BeEmpty.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -82,7 +81,6 @@
 		7A66539DD738BE28A057CA37AAF8F829 /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052F5ED6DCADA382F3AEAE93C337A413 /* ExampleHooks.swift */; };
 		7ACF7943A939837532BB53A73F01CE63 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5657E72422A2F938A3B3FF516D445C1 /* Match.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		83128DE43716922D1C2513CA6767EC77 /* HaveValidDynamicTypeSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36C6EF846136185FA19A74957263FFD /* HaveValidDynamicTypeSnapshot.swift */; };
-		869F8880F64F7433701D1F4C19A619BA /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AD93D832F4EEF40FD5E76BC6593FAE /* ReplaceMe.swift */; };
 		86A4582105FDBBD5C53E0A2DAB4CC003 /* Nimble-Snapshots-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CC5EE6086FB5F5B1EB826AF582D3346 /* Nimble-Snapshots-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEAEB9C35768359C91E6C6C8C7398A4 /* FBSnapshotTestController.m */; };
 		8B32C823A5263884ACC364067EFADA22 /* MatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EF3A5F39C2D4CC668E8262B1C00BC /* MatchError.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -272,7 +270,6 @@
 		31F1E7BB0456B5993C835284B7BFC34F /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		3275F0F3870AAF56D73783CA03EEAE0A /* Nimble-Snapshots.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Nimble-Snapshots.modulemap"; sourceTree = "<group>"; };
 		346B1A99650160E6C7AC1F4BACEEC426 /* Contain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contain.swift; path = Sources/Nimble/Matchers/Contain.swift; sourceTree = "<group>"; };
-		34AD93D832F4EEF40FD5E76BC6593FAE /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = DFLinkageView/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		397C2FC5CF1C6943706F67C85FFE16E3 /* Nimble.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nimble.h; path = Sources/Nimble/Nimble.h; sourceTree = "<group>"; };
 		3A556A0025D5DE805ED967FA03F68720 /* mach_excServer.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mach_excServer.c; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/mach_excServer.c; sourceTree = "<group>"; };
 		3B31B53E4253B3EDCD5D6B3A9C6CC39F /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
@@ -298,7 +295,7 @@
 		4F90C306D3BDC7DC9814131B766E0F1F /* DFLinkageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFLinkageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F9F41A15762B2F4A7BA94266DF30767 /* Pods-DFLinkageView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DFLinkageView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		51D67586939BC9B869832C230FFAE2C6 /* Callsite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Callsite.swift; path = Sources/Quick/Callsite.swift; sourceTree = "<group>"; };
-		5208C9F424D5797600ED8C47 /* UIViewController+DFLinkage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+DFLinkage.swift"; path = "DFLinkageView/Classes/UIViewController+DFLinkage.swift"; sourceTree = "<group>"; };
+		5208C9F424D5797600ED8C47 /* DFLinkage+Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DFLinkage+Controller.swift"; path = "DFLinkageView/Classes/DFLinkage+Controller.swift"; sourceTree = "<group>"; };
 		5208C9F524D5797600ED8C47 /* DFLinkageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DFLinkageScrollView.swift; path = DFLinkageView/Classes/DFLinkageScrollView.swift; sourceTree = "<group>"; };
 		5208C9F624D5797600ED8C47 /* DFLinkageTagHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DFLinkageTagHeader.swift; path = DFLinkageView/Classes/DFLinkageTagHeader.swift; sourceTree = "<group>"; };
 		52C1B30CC4697E1933141720223103BC /* Nimble_Snapshots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble_Snapshots.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -628,8 +625,7 @@
 			children = (
 				5208C9F524D5797600ED8C47 /* DFLinkageScrollView.swift */,
 				5208C9F624D5797600ED8C47 /* DFLinkageTagHeader.swift */,
-				5208C9F424D5797600ED8C47 /* UIViewController+DFLinkage.swift */,
-				34AD93D832F4EEF40FD5E76BC6593FAE /* ReplaceMe.swift */,
+				5208C9F424D5797600ED8C47 /* DFLinkage+Controller.swift */,
 				C1B9492BA06A5AB254790A294FF313A7 /* Pod */,
 				2904C414C93C4B326FA32148DE5322C4 /* Support Files */,
 			);
@@ -940,8 +936,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C276D90AC82F79BEBD68BC6301C33C31 /* DFLinkageView-umbrella.h in Headers */,
-				5208C9F324D5787100ED8C47 /* ReplaceMe.swift in Headers */,
-				5208CA0024D5820800ED8C47 /* UIViewController+DFLinkage.swift in Headers */,
+				5208CA0024D5820800ED8C47 /* DFLinkage+Controller.swift in Headers */,
 				5208C9FA24D57D5A00ED8C47 /* DFLinkageScrollView.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1229,8 +1224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD5777519ABB2C905E9F0BCC5566B08 /* DFLinkageView-dummy.m in Sources */,
-				869F8880F64F7433701D1F4C19A619BA /* ReplaceMe.swift in Sources */,
-				5208C9F724D5797600ED8C47 /* UIViewController+DFLinkage.swift in Sources */,
+				5208C9F724D5797600ED8C47 /* DFLinkage+Controller.swift in Sources */,
 				5208C9F924D5797600ED8C47 /* DFLinkageTagHeader.swift in Sources */,
 				5208C9F824D5797600ED8C47 /* DFLinkageScrollView.swift in Sources */,
 			);
